@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
-import { Design, Develope } from "./AllSvgs";
+import { Develope } from "./AllSvgs";
 import { motion } from "framer-motion";
 
 import LogoComponent from "../subComponents/LogoComponent";
@@ -103,24 +103,6 @@ const ImgIcon = styled.img`
   }
 `;
 
-// const animations = [
-//   {
-//     name: "HTML, CSS, JS, Tailwind",
-//     link: "https://assets9.lottiefiles.com/packages/lf20_gnVHaPnRG5.json",
-//   },
-//   {
-//     name: "React.Js",
-//     link: "https://assets2.lottiefiles.com/packages/lf20_b23ll34c.json",
-//   },
-//   {
-//     name: "Next.Js",
-//     link: "https://assets7.lottiefiles.com/packages/lf20_6MLb71lccG.json",
-//   },
-//   {
-//     name: "MongoDB",
-//     link: "https://assets3.lottiefiles.com/private_files/lf30_9xcevvfo.json",
-//   },
-// ];
 const animations = [
   {
     icon: <Html />,

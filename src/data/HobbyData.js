@@ -1,5 +1,3 @@
-// blog data
-
 export const Hobbies = [
   {
     id: 1,
