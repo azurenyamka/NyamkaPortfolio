@@ -9,7 +9,7 @@ import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 import ParticleComponent from "../subComponents/ParticleComponent";
 import BigTitle from "../subComponents/BigTitlte";
-import AnimationPlayer from "./animations";
+
 import Html from "./skills/html";
 import Css from "./skills/css";
 import Js from "./skills/js";
@@ -18,6 +18,10 @@ import Mui from "./skills/mui";
 import Tailwind from "./skills/tailwind";
 import Next from "./skills/next";
 import MongoDB from "./skills/mongo";
+import TypeScript from "./skills/typescript";
+import Express from "./skills/express";
+import MySQL from "./skills/mqsql";
+import Bootstrap from "./skills/bootstrap";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -35,7 +39,7 @@ const Main = styled.div`
   background-color: ${(props) => props.theme.body};
   padding: 2rem;
   width: 80vw;
-  height: 60vh;
+  height: 70%;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -88,21 +92,6 @@ const Description = styled.div`
   }
 `;
 
-const Img = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-`;
-const ImgIcon = styled.img`
-  width: calc(100% / 8 - 40px);
-  @media only screen and (max-width: 600px) {
-    width: calc(100% / 2 - 40px);
-    height: 30px;
-  }
-`;
-
 const animations = [
   {
     icon: <Html />,
@@ -129,6 +118,10 @@ const animations = [
     name: "Tailwind",
   },
   {
+    icon: <Bootstrap />,
+    name: "Bootstrap",
+  },
+  {
     icon: <Next />,
     name: "NextJs",
   },
@@ -136,50 +129,21 @@ const animations = [
     icon: <MongoDB />,
     name: "MongoDB",
   },
-];
-const img = [
   {
-    name: "HTML",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    link: "https://assets6.lottiefiles.com/private_files/lf30_wuuqhfmi.json",
+    icon: <MySQL />,
+    name: "MySQL",
   },
   {
-    name: "CSS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    link: "https://assets7.lottiefiles.com/private_files/lf30_d6czzyqr.json",
+    icon: <TypeScript />,
+    name: "TypeScript",
   },
+  // {
+  //   icon: <React />,
+  //   name: "React",
+  // },
   {
-    name: "JS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-    link: "https://assets8.lottiefiles.com/packages/lf20_lwpbfw74.json",
-  },
-  {
-    name: "ReactJs",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    link: "https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json",
-  },
-  {
-    name: "SASS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-    link: "",
-  },
-  {
-    name: "MUI",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
-  },
-  {
-    name: "Tailwind",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-  },
-  {
-    name: "NextJs",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    link: "https://assets7.lottiefiles.com/packages/lf20_6MLb71lccG.json",
-  },
-  {
-    name: "MongoDB",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    link: "https://assets6.lottiefiles.com/private_files/lf30_9xcevvfo.json",
+    icon: <Express />,
+    name: "Express",
   },
 ];
 
